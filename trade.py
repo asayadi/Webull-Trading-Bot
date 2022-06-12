@@ -1,7 +1,7 @@
 from webull import webull
 
-phone = '+1-phonenumber'
-pw = 'your webull account password'
+phone = '+1-phonenumber' #updated per user
+pw = 'your webull account password' #updated per user
 
 stockTik = 'SONY'
 expire = '2022-06-22' #YYY-MM-DD
@@ -16,7 +16,7 @@ answer = input("Security Question Answer: ")
 question_id = input("Question ID: ") #we can automate these with if statements if we know what all the security questions are
 data = wb.login(phone, pw, 'PythonTest', mfa_code, question_id, answer)
 print("Passed Verification")
-print(wb.get_trade_token('104668'))
+print(wb.get_trade_token('your trading PIN')) #updated per user
 
 #wb.place_order_option()
 
