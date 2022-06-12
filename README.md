@@ -2,9 +2,9 @@
 Bot that scrapes Discord server for callouts and places appropriate option trade on Webull platform.
 
 Instructions:
-The only part of the code you need to alter to make the program work for you is the token in discord.py and phone/password in trade.py.
+The only parts of the code you need to alter to make the program work for you is the token in discord.py and phone/password/trading PIN in trade.py.
 
-Phone is obviously your phone number that is associated with your Webull account and Password is the password that you use for your Webull account.
+Phone is obviously your phone number that is associated with your Webull account and Password is the password that you use for your Webull account and place your Webull PIN that you use to unlock trading inside of wb.get_trade_token('') so that the program can unlock your account and allow access to trade.
 
 In order to get your token for discord.py to work, you need to open Discord in a BROWSER NOT THE APPLICATION. Then go to the server you want to be scraping messages from. Inspect the page (Control + Shift + c) and then type something in the textbox on discord on that server. If you select the "Network" tab at the top of inspect and then click on "typing" on the left side and scroll down the "Headers" tab to the right of "typing", you will see "authorization: " followed buy a string of random characters. That is your token, copy that and insert it into the provided space in discord.py
 
